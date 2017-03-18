@@ -1,0 +1,378 @@
+/* --------------------------- */
+/* BASIC SETUP                 */
+/* --------------------------- */
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+.clearfix {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* LINKS                */
+a:link, a:visited {
+    color: #f55856;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #555;
+    text-decoration: none;
+}
+
+/* --------------------------- */
+/* REUSABLE COMPONENTS         */
+/* --------------------------- */
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.red {
+    color: #f55856;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;    
+}
+
+h4 {
+    text-align: center;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 30px;
+    font-weight: 700;    
+    display: inline-block;
+    position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #463f3a;
+    border-top: 3px solid #463f3a;
+    top: 0;
+    width: 430px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+#our-shoes .col,
+#latest-arrivals .latest,
+#featured-products .featured,
+#latest-blogs .blog {
+    margin: 1% 0 1% 1%;
+}
+
+a.block-divider:after {
+  content: "/";  
+  margin-left: 25px;  
+  color:  #f55856;
+}
+
+
+/* --------------------------- */
+/* HEADER                      */
+/* --------------------------- */
+.header-ul {
+    font-weight: 300;
+    font-size: 14px;    
+}
+.header-ul li {
+    list-style:  none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-row {
+    background: #f5f6f1;
+}
+
+ul#navbar {
+    display: inline-block;
+    margin: 70px 50px 0 200px;
+}
+#navbar li {
+    list-style:  none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navbar li a {
+    color: #463f3a;
+}
+
+#logo {
+    margin: 50px 100px 50px 0;
+}
+
+#basket {
+    margin-top:  55px;
+    position: relative;
+}
+
+#basket .quantity {
+    position: relative;
+    top: 0;
+    right: 70px;
+}
+
+#basket .price {
+    position: relative;
+    top: 0;
+    right: 70px;
+}
+#basket .box {
+    position: relative;
+    top: -30px;
+}
+
+/* --------------------------- */
+/* HERO                      */
+/* --------------------------- */
+#hero-img {
+    background: url('../img/shoe.jpg') top left no-repeat;
+    background-size: cover;
+    height: 520px;
+    width: 100%;
+    position: relative;
+}
+
+#hero-img .new-line {
+    display: block;
+}
+
+#hero-img h1 {
+    color: white;
+    font-size: 58px;
+    line-height: 88px;
+    padding: 45px 0 0 90px;
+}
+
+#hero .hero-logo {
+    position: absolute;
+    top: 190px;
+    right: 0;
+}
+
+#hero-buttons .hero-button {
+    background: #f5f6f1;
+    text-align: center;
+    padding: 35px;
+}
+
+#hero-buttons p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#hero-buttons h3 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+
+/* --------------------------- */
+/* OUR SHOES                   */
+/* --------------------------- */
+
+
+#our-shoes {    
+    background: #f8f8f8;
+}
+
+#our-shoes .our-shoe {
+    background: #FFF;
+    margin-top: 35px;
+}
+
+#our-shoes .our-shoe img {
+    width: 100%;
+}
+
+#our-shoes .our-shoe h3 {
+    font-size: 30px;
+    margin:  20px;
+}
+
+#our-shoes .our-shoe p {
+    font-size: 16px;
+    line-height: 24px;
+    margin:  20px;
+}
+
+#our-shoes .our-shoe .category-link {
+    display: inline-block;
+    color: #f55856;
+    font-size: 20px;
+    margin:  20px;
+}
+
+/* --------------------------------------------------- */
+/* LATEST_ARRIVALS & FEATURED PROPDUCTS & LATEST BLOGS */
+/* --------------------------------------------------- */
+
+#featured-products .featured,
+#latest-arrivals .latest,
+#latest-blogs .blog 
+{
+    margin-top: 35px;
+}
+
+#featured-products .featured .arrival,
+#latest-arrivals .latest .arrival {
+    font-size: 18px;
+    font-weight: 300;
+    margin:  20px 0;
+}
+
+#featured-products .featured  .price,
+#latest-arrivals .latest .price,
+#latest-blogs .blog .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin:  20px 0;    
+}
+
+#featured-products .featured .category-link,
+#latest-arrivals .latest .category-link {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;   
+    background: #463f3a;
+    display: block;
+    text-align: center;
+    padding:  10px; 
+    color: white;
+}
+
+#featured-products {
+    background: #f8f8f8;
+}
+
+/* ------------------------------------- */
+/* LATEST BLOGS                          */
+/* ------------------------------------- */
+#latest-blogs .blog .title {
+    font-size: 17px;
+}
+#latest-blogs .blog .exerpt,
+#latest-blogs .blog .read-more {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin:  20px 0;    
+}
+
+/* ------------------------------------- */
+/* BULLSY HEADLINE                       */
+/* ------------------------------------- */
+
+#bullsy-headline {
+    background: #f8f8f8;   
+    text-align: center; 
+}
+
+#bullsy-headline h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#bullsy-headline tagline {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ------------------------------------- */
+/* FOOTER                                */
+/* ------------------------------------- */
+
+footer {
+    background: #463f3a;   
+    padding: 70px 0; 
+}
+
+#footer-nav {
+    position: relative;
+}
+#upper-copyright {
+    position: absolute;
+    top: 35px;
+    left:  40%;   
+    color: white;
+    font-size: 14px;
+}
+ul#navbar-footer {
+    display: inline-block;
+    margin: 0 50px 0 200px;
+}
+#navbar-footer li,
+#lower-footer #social-icons-footer li  {
+    list-style:  none;
+    display: inline-block;
+    margin-right: 45px;
+    color: white;
+}
+
+#navbar-footer li a {
+    color: white;
+}
+
+#lower-footer #social-icons-footer {
+    display: inline-block;
+}
+
+#lower-footer #social-icons-footer li {
+    margin: 10px 20px 10px 0;    
+}
+
+#lower-footer #copyright {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px 0;
+}
